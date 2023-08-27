@@ -1271,8 +1271,8 @@
 	</script>
 </div>
 		<div class="watchmore">
-		<a href="###" class="more1"><img src="PANPAN/images/首頁-4.png"></a>
-		<a href="###" class="less1"><img src="PANPAN/images/首頁-5.png"></a>
+		<a href="###" class="moreA"><img src="PANPAN/images/首頁-4.png"></a>
+		<a href="###" class="lessA"><img src="PANPAN/images/首頁-5.png"></a>
 	<div class="edm1 hover1">
 		<a rel="example_group2" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-6.png"></a>
 		<a rel="example_group2" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-7.png"></a>
@@ -1284,17 +1284,17 @@
 	</style>
 	<script>
 	$('document').ready(function() {
-	$('p.more1, a.less1, div.edm1') .hide();
+	$('p.moreA, a.lessA, div.edmA') .hide();
 
-	$('a.more1').click(function() {
-	$('p.more1, a.edm1, div.edm1').slideDown(0);
-	$('a.less1').show();
+	$('a.moreA').click(function() {
+	$('p.moreA, a.edmA, div.edmA').slideDown(0);
+	$('a.lessA').show();
 	$(this).hide();
 	});
 
 	$('a.less1').click(function() {
-	$('p.more1, a.edm1, div.edm1').slideUp(0);
-	$('a.more1').show();
+	$('p.moreA, a.edmA, div.edmA').slideUp(0);
+	$('a.moreA').show();
 	$(this).hide();
 	});
 
