@@ -1233,16 +1233,16 @@
 	</style>
 	<script>
 	$('document').ready(function() {
-	$('p.more, a.less, div.edm, p.more1, a.less1, div.edm1') .hide();
+	$('p.more, a.less, div.edm') .hide();
 
 	$('a.more').click(function() {
-	$('p.more, a.edm, div.edm').slideDown(0);
+	$('p.more, a.edm, div.edm').slideDown();
 	$('a.less').show();
 	$(this).hide();
 	});
 
 	$('a.less').click(function() {
-	$('p.more, a.edm, div.edm').slideUp(0);
+	$('p.more, a.edm, div.edm').slideUp();
 	$('a.more').show();
 	$(this).hide();
 	});
