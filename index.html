@@ -1327,37 +1327,16 @@
 	$('p.more3, a.less3, div.edm3') .hide();
 
 	$('a.more3').click(function() {
-	$('p.more3, a.edm3, div.edm3').slideDown(0);
+	$('p.more3, a.edm3, div.edm3').slideDown();
 	$('a.less3').show();
 	$(this).hide();
 	});
 
 	$('a.less3').click(function() {
-	$('p.more3, a.edm3, div.edm3').slideUp(0);
+	$('p.more3, a.edm3, div.edm3').slideUp();
 	$('a.more3').show();
 	$(this).hide();
 	});
-
-	$('a.switch1').click(function() {
-	$('p.more1, div.edm1').slideToggle(1200);
-	if ( $('a.more1').is(':hidden')) {
-		 $('a.more1').show();
-		 $('a.less1').hide();} 
-	else {
-		$('a.more1').hide();
-		$('a.less1').show();
-	 }
-	});
-	});
-	$(document).ready(function() {
-			$("a[rel=example_group2]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return 'span id="fancybox-title-over" Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
 });
 	</script>
 </div>		
@@ -1378,37 +1357,16 @@
 	$('p.more4, a.less4, div.edm4') .hide();
 
 	$('a.more4').click(function() {
-	$('p.more4, a.edm4, div.edm4').slideDown(0);
+	$('p.more4, a.edm4, div.edm4').slideDown();
 	$('a.less4').show();
 	$(this).hide();
 	});
 
 	$('a.less4').click(function() {
-	$('p.more4, a.edm4, div.edm4').slideUp(0);
+	$('p.more4, a.edm4, div.edm4').slideUp();
 	$('a.more4').show();
 	$(this).hide();
 	});
-
-	$('a.switch4').click(function() {
-	$('p.more1, div.edm1').slideToggle(1200);
-	if ( $('a.more1').is(':hidden')) {
-		 $('a.more1').show();
-		 $('a.less1').hide();} 
-	else {
-		$('a.more1').hide();
-		$('a.less1').show();
-	 }
-	});
-	});
-	$(document).ready(function() {
-			$("a[rel=example_group2]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return 'span id="fancybox-title-over" Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
 });
 	</script>
 </div>
