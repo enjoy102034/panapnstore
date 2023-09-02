@@ -1263,17 +1263,17 @@
 	</style>
 	<script>
 	$('document').ready(function() {
-	$('.more1, .less1, .edm1') .hide();
+	$('p.more1, a.less1, div.edm1') .hide();
 
-	$('.more1').click(function() {
-	$('.more1, .edm1, .edm1').slideDown(100);
-	$('.less1').show();
+	$('a.more1').click(function() {
+	$('p.more1, a.edm1, div.edm1').slideDown(1200);
+	$('a.less1').show();
 	$(this).hide();
 	});
 
-	$('.less1').click(function() {
-	$('.more1, .edm1, .edm1').slideUp(100);
-	$('.more1').show();
+	$('a.less1').click(function() {
+	$('p.more1, a.edm1, div.edm1').slideUp(1200);
+	$('a.more1').show();
 	$(this).hide();
 	});
 
