@@ -1266,13 +1266,13 @@
 	$('p.more1, a.less1, div.edm1') .hide();
 
 	$('a.more1').click(function() {
-	$('p.more1, a.edm1, div.edm1').slideDown(1200);
+	$('p.more1, a.edm1, div.edm1').slideDown();
 	$('a.less1').show();
 	$(this).hide();
 	});
 
 	$('a.less1').click(function() {
-	$('p.more1, a.edm1, div.edm1').slideUp(1200);
+	$('p.more1, a.edm1, div.edm1').slideUp();
 	$('a.more1').show();
 	$(this).hide();
 	});
@@ -1297,37 +1297,16 @@
 	$('p.more2, a.less2, div.edm2') .hide();
 
 	$('a.more2').click(function() {
-	$('p.more2, a.edm2, div.edm2').slideDown(0);
+	$('p.more2, a.edm2, div.edm2').slideDown();
 	$('a.less2').show();
 	$(this).hide();
 	});
 
 	$('a.less2').click(function() {
-	$('p.more2, a.edm2, div.edm2').slideUp(0);
+	$('p.more2, a.edm2, div.edm2').slideUp();
 	$('a.more2').show();
 	$(this).hide();
 	});
-
-	$('a.switch1').click(function() {
-	$('p.more1, div.edm1').slideToggle(1200);
-	if ( $('a.more1').is(':hidden')) {
-		 $('a.more1').show();
-		 $('a.less1').hide();} 
-	else {
-		$('a.more1').hide();
-		$('a.less1').show();
-	 }
-	});
-	});
-	$(document).ready(function() {
-			$("a[rel=example_group2]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return 'span id="fancybox-title-over" Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
 });
 	</script>
 </div>		
