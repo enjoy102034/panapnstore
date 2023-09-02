@@ -2697,15 +2697,6 @@
 </style>
 <script>
      $( document ).ready(function() {
-          var winScroll = $(this).scrollTop(),
-          this_el = $("#scrollTopButton");
-
-          if(winScroll > -1){
-            this_el.fadeIn();
-          }else{
-            this_el.fadeOut();
-          }
-
           $("#scrollTopButton").click(function() {
             $('html,body').animate({ scrollTop: 0 });
           });
