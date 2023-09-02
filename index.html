@@ -1250,53 +1250,33 @@
 	</script>
 </div>
 		<div class="watchmore">
-		<a href="###" class="moreA"><img src="PANPAN/images/首頁-4.png"></a>
-		<a href="###" class="lessA"><img src="PANPAN/images/首頁-5.png"></a>
+		<a href="###" class="more1"><img src="PANPAN/images/首頁-4.png"></a>
+		<a href="###" class="less1"><img src="PANPAN/images/首頁-5.png"></a>
 	<div class="edm1 hover1">
-		<a rel="example_group2" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-6.png"></a>
-		<a rel="example_group2" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-7.png"></a>
-		<a rel="example_group2" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-8.png"></a>
-		<a rel="example_group2" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-9.png"></a>	
+		<a rel="example_group1" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-6.png"></a>
+		<a rel="example_group1" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-7.png"></a>
+		<a rel="example_group1" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-8.png"></a>
+		<a rel="example_group1" href="images/can301.png" class="can"><img src="PANPAN/images/首頁-9.png"></a>	
 	</div>	
 	<style>
 
 	</style>
 	<script>
 	$('document').ready(function() {
-	$('.moreA, .lessA, .edmA') .hide();
+	$('.more1, .less1, .edm1') .hide();
 
-	$('a.moreA').click(function() {
-	$('p.moreA, a.edmA, div.edmA').slideDown(0);
-	$('a.lessA').show();
+	$('.more1').click(function() {
+	$('.more1, .edm1, .edm1').slideDown(0);
+	$('.less1').show();
 	$(this).hide();
 	});
 
-	$('a.less1').click(function() {
-	$('p.moreA, a.edmA, div.edmA').slideUp(0);
-	$('a.moreA').show();
+	$('.less1').click(function() {
+	$('.more1, .edm1, .edm1').slideUp(0);
+	$('.more1').show();
 	$(this).hide();
 	});
 
-	$('a.switch1').click(function() {
-	$('p.more1, div.edm1').slideToggle(1200);
-	if ( $('a.more1').is(':hidden')) {
-		 $('a.more1').show();
-		 $('a.less1').hide();} 
-	else {
-		$('a.more1').hide();
-		$('a.less1').show();
-	 }
-	});
-	});
-	$(document).ready(function() {
-			$("a[rel=example_group2]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return 'span id="fancybox-title-over" Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
 });
 	</script>
 </div>		
